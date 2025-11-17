@@ -1,4 +1,17 @@
+import { Link, useLocation } from 'react-router-dom'
+
 function Footer() {
+  const location = useLocation()
+  
+  const isActive = (path: string) => location.pathname === path
+  
+  const linkClasses = (path: string) => 
+    `transition-colors duration-200 ${
+      isActive(path) 
+        ? 'text-orange-500 dark:text-orange-400 font-semibold'
+        : 'text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
+    }`
+  
   return (
     <footer className="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -12,8 +25,8 @@ function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="/" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Home</a></li>
-              <li><a href="/about" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">About</a></li>
+              <li><Link to="/" className={linkClasses('/')}>Home</Link></li>
+              <li><Link to="/about" className={linkClasses('/about')}>About</Link></li>
             </ul>
           </div>
           <div>
