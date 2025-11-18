@@ -8,8 +8,8 @@ function Footer() {
   const linkClasses = (path: string) => 
     `transition-colors duration-200 ${
       isActive(path) 
-        ? 'text-orange-500 dark:text-orange-400 font-semibold'
-        : 'text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
+        ? 'text-utrgv-orange-500 dark:text-utrgv-orange-400 font-semibold'
+        : 'text-gray-600 dark:text-gray-300 hover:text-utrgv-orange-500 dark:hover:text-utrgv-orange-400'
     }`
   
   return (
@@ -17,9 +17,9 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">UTRGV Cloud</h3>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">UTRGV AI Agents</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Providing cutting-edge cloud infrastructure and services for the University of Texas Rio Grande Valley.
+              Showcasing autonomous AI agent capabilities for developers at the University of Texas Rio Grande Valley.
             </p>
           </div>
           <div>
@@ -27,6 +27,7 @@ function Footer() {
             <ul className="space-y-2">
               <li><Link to="/" className={linkClasses('/')}>Home</Link></li>
               <li><Link to="/about" className={linkClasses('/about')}>About</Link></li>
+              <li><Link to="/contact" className={linkClasses('/contact')}>Contact</Link></li>
             </ul>
           </div>
           <div>
@@ -34,12 +35,12 @@ function Footer() {
             <address className="text-gray-600 dark:text-gray-300 not-italic">
               <p>University of Texas Rio Grande Valley</p>
               <p>Edinburg, TX 78539</p>
-              <p className="mt-2">Email: cloud@utrgv.edu</p>
+              <p className="mt-2">Email: contact@utrgv.edu</p>
             </address>
           </div>
         </div>
         <div className="border-t border-gray-200 dark:border-gray-700 mt-8 pt-8 text-center text-gray-500 dark:text-gray-400">
-          <p>&copy; {new Date().getFullYear()} UTRGV Cloud. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} UTRGV AI Agents. All rights reserved.</p>
         </div>
       </div>
     </footer>

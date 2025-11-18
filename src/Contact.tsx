@@ -7,11 +7,11 @@ function Contact() {
       <Breadcrumb currentPage="Contact" />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-purple-600 via-pink-600 to-red-600 text-white py-24">
+      <section className="bg-gradient-to-br from-utrgv-orange-600 via-red-600 to-utrgv-orange-700 text-white py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">Contact Us</h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
-            Get in touch with our team for support and inquiries
+            Connect with UTRGV developers about AI agents
           </p>
         </div>
       </section>
@@ -22,26 +22,26 @@ function Contact() {
            <div className="text-center mb-16">
              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">Reach Out</h2>
              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-               Have questions about UTRGV Cloud services? Our team is here to help you with any inquiries
-               or to discuss how our platform can support your research or educational projects.
+               Interested in learning more about AI agent capabilities or want to discuss potential applications? 
+               Our team is here to showcase what's possible with autonomous AI agents.
              </p>
            </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div className="space-y-8">
-               <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900 dark:to-indigo-900 p-8 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700">
+               <div className="bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-900 dark:to-red-900 p-8 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700">
                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Contact Information</h3>
                  <div className="space-y-6">
                    <div className="flex items-start">
-                     <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                     <div className="w-12 h-12 bg-utrgv-orange-500 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                        </svg>
                      </div>
                      <div>
                        <p className="font-semibold text-gray-900 dark:text-white">Email</p>
-                       <p className="text-gray-600 dark:text-gray-300">cloud@utrgv.edu</p>
+                       <p className="text-gray-600 dark:text-gray-300">contact@utrgv.edu</p>
                      </div>
                    </div>
                    <div className="flex items-start">
@@ -90,7 +90,7 @@ function Contact() {
                    <input
                      type="text"
                      id="name"
-                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-300 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                      className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-utrgv-orange-500 focus:border-utrgv-orange-500 transition duration-300 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
                      placeholder="Your full name"
                    />
                  </div>
@@ -99,35 +99,35 @@ function Contact() {
                    <input
                      type="email"
                      id="email"
-                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-300 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                      className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-utrgv-orange-500 focus:border-utrgv-orange-500 transition duration-300 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
                      placeholder="your.email@utrgv.edu"
                    />
                  </div>
                  <div>
                    <label htmlFor="subject" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Subject</label>
-                   <select
-                     id="subject"
-                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-300 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
-                   >
-                     <option>General Inquiry</option>
-                     <option>Technical Support</option>
-                     <option>Research Collaboration</option>
-                     <option>Account Issues</option>
-                     <option>Other</option>
-                   </select>
+                     <select
+                       id="subject"
+                       className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-utrgv-orange-500 focus:border-utrgv-orange-500 transition duration-300 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                     >
+                       <option>General Inquiry</option>
+                       <option>AI Agent Demo Request</option>
+                       <option>Collaboration Opportunity</option>
+                       <option>Technical Questions</option>
+                       <option>Other</option>
+                     </select>
                  </div>
                  <div>
                    <label htmlFor="message" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Message</label>
                    <textarea
                      id="message"
                      rows={6}
-                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-300 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                      className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-utrgv-orange-500 focus:border-utrgv-orange-500 transition duration-300 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
                      placeholder="Tell us how we can help you..."
                    ></textarea>
                  </div>
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  className="w-full bg-gradient-to-r from-utrgv-orange-600 to-red-600 hover:from-utrgv-orange-700 hover:to-red-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
                   Send Message
                 </button>
