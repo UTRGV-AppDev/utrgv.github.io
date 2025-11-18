@@ -1,6 +1,11 @@
+import Breadcrumb from './Breadcrumb'
+
 function About() {
   return (
     <div className="min-h-screen">
+      {/* Breadcrumb */}
+      <Breadcrumb currentPage="About" />
+      
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-indigo-600 via-blue-700 to-cyan-600 text-white py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

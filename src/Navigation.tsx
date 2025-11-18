@@ -33,6 +33,9 @@ function Navigation() {
             <Link to="/about" className={linkClasses('/about')}>
               About
             </Link>
+            <Link to="/contact" className={linkClasses('/contact')}>
+              Contact
+            </Link>
           </nav>
           
           <div className="flex items-center">
