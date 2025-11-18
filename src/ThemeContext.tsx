@@ -30,12 +30,20 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
     if (saved === 'light' || saved === 'dark') return saved
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
   })
+  const [announcement, setAnnouncement] = useState('')
 
   useEffect(() => {
     const root = window.document.documentElement
     root.classList.remove('light', 'dark')
     root.classList.add(theme)
     localStorage.setItem('theme', theme)
+    
+    setAnnouncement(`Switched to ${theme} mode`)
+    const timer = setTimeout(() => {
+      setAnnouncement('')
+    }, 1000)
+    
+    return () => clearTimeout(timer)
   }, [theme])
 
   const toggleTheme = () => {
@@ -44,6 +52,14 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      <div 
+        role="status" 
+        aria-live="polite" 
+        aria-atomic="true" 
+        className="sr-only"
+      >
+        {announcement}
+      </div>
       {children}
     </ThemeContext.Provider>
   )

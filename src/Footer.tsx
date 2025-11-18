@@ -22,20 +22,22 @@ function Footer() {
               Showcasing autonomous AI agent capabilities for developers at the University of Texas Rio Grande Valley.
             </p>
           </div>
-          <div>
+          <nav aria-label="Footer navigation">
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2" role="list">
               <li><Link to="/" className={linkClasses('/')}>Home</Link></li>
               <li><Link to="/about" className={linkClasses('/about')}>About</Link></li>
               <li><Link to="/contact" className={linkClasses('/contact')}>Contact</Link></li>
             </ul>
-          </div>
+          </nav>
           <div>
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Contact</h3>
             <address className="text-gray-600 dark:text-gray-300 not-italic">
               <p>University of Texas Rio Grande Valley</p>
               <p>Edinburg, TX 78539</p>
-              <p className="mt-2">Email: contact@utrgv.edu</p>
+              <p className="mt-2">
+                Email: <a href="mailto:contact@utrgv.edu" className="hover:text-utrgv-orange-500 dark:hover:text-utrgv-orange-400 transition-colors">contact@utrgv.edu</a>
+              </p>
             </address>
           </div>
         </div>
